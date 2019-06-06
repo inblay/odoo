@@ -11,6 +11,7 @@
     'depends': [
         'account',
         'account_accountant',
+        'base_automation',
         'crm',
         'fleet',
         'helpdesk',
