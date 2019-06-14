@@ -7,7 +7,7 @@
     'website': 'https://www.vauxoo.com',
     'license': 'AGPL-3',
     'category': 'Installer',
-    'version': '12.0.0.0.1',
+    'version': '12.0.0.0.2',
     'depends': [
         'account',
         'account_accountant',
