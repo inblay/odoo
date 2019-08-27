@@ -1,0 +1,45 @@
+<odoo>
+
+    <record model="ir.ui.view" id="view_employee_form">
+        <field name="name">hr.employee.new.fields</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='personal_information']/group" position="before">
+                <group>
+                    <group string="General Information">
+                        <field name="first_name"/>
+                        <field name="middle_name"/>
+                        <field name="first_last_name"/>
+                        <field name="second_last_name"/>
+                    </group>
+                    <group string="Family">
+                        <field name="significant_other"/>
+                        <field name="anniversary"/>
+                        <label for="children_ids"/>
+                        <field name="children_ids" widget="one2many_list" nolabel="1" colspan="2">
+                          <tree editable="bottom">
+                            <field name="name" nolabel="1"/>
+                          </tree>
+                        </field>
+                    </group>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='personal_information']" position="inside">
+                <group>
+                    <group string="Work Uniform">
+                        <field name="pant_size"/>
+                        <field name="shirt_size"/>
+                        <field name="weight"/>
+                    </group>
+                    <group string="Legal">
+                        <field name="imss_number"/>
+                        <field name="ine_number"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

@@ -34,6 +34,8 @@
     'test': [
     ],
     'data': [
+        "security/ir.model.access.csv",
+        "views/hr_employee.xml",
     ],
     'demo': [
     ],
