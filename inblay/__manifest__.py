@@ -34,7 +34,10 @@
     'test': [
     ],
     'data': [
+        "data/ir_cron.xml",
+        "data/base_automation.xml",
         "security/ir.model.access.csv",
+        "views/product_view.xml",
         "views/hr_employee.xml",
     ],
     'demo': [
