@@ -8,3 +8,6 @@
 [submodule "product-attribute"]
 	path = product-attribute
 	url = git@github.com:OCA/product-attribute.git
+[submodule "web"]
+	path = web
+	url = https://github.com/OCA/web
