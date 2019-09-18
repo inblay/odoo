@@ -30,6 +30,7 @@
         'timesheet_grid',
         'website_sale',
         'website',
+        'web_responsive',
     ],
     'test': [
     ],
