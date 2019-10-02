@@ -21,8 +21,18 @@ msgid "Anniversary"
 msgstr ""
 
 #. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.res_company_form_view_inherit_inblay
+msgid "Background URL"
+msgstr ""
+
+#. module: inblay
 #: model:ir.model.fields,field_description:inblay.field_hr_employee__children_ids
 msgid "Children"
+msgstr ""
+
+#. module: inblay
+#: model:ir.model.fields,field_description:inblay.field_res_company__back_background
+msgid "Company Backend Background"
 msgstr ""
 
 #. module: inblay
@@ -149,6 +159,11 @@ msgstr ""
 #. module: inblay
 #: model:ir.model.fields,field_description:inblay.field_hr_employee__significant_other
 msgid "Significant Other"
+msgstr ""
+
+#. module: inblay
+#: model:ir.model.fields,help:inblay.field_res_company__back_background
+msgid "URL of an image that will be the background of the main screen of the backend. Allowed formats: jpg, jpge, png, gif, svg"
 msgstr ""
 
 #. module: inblay

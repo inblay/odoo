@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables_inblay" inherit_id="web._assets_primary_variables" priority="20">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/inblay/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_common_inblay" inherit_id="web.assets_common">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/inblay/static/src/scss/ui.scss"/>
+        </xpath>
+    </template>
+</odoo>
