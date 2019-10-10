@@ -1,0 +1,15 @@
+Main
+========================================================================================================================
+
+* Inherit and update kanban in optional modules
+
+
+Under consideration
+========================================================================================================================
+
+* Mass action update core public prices (% + rounding)
+* Generate inventory adjustment for all variants of selected products
+* Change stock valuation accounts
+* Pricelists features (?)
+* Should we duplicate attribute lines
+* Website availability strategy
