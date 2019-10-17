@@ -7,7 +7,7 @@
     'website': 'https://www.vauxoo.com',
     'license': 'AGPL-3',
     'category': 'Installer',
-    'version': '12.0.0.0.3',
+    'version': '12.0.0.0.5',
     'depends': [
         'account',
         'account_accountant',
@@ -47,7 +47,9 @@
         "views/product_view.xml",
         "views/hr_employee.xml",
         "views/assets.xml",
-        "views/res_company_view.xml"
+        "views/res_company_view.xml",
+        "views/sale_order_view.xml",
+        "report/sale_report_templates.xml",
     ],
     'demo': [
     ],

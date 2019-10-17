@@ -16,6 +16,16 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
+msgid "<strong>Currency:</strong>"
+msgstr ""
+
+#. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.address_layout_inherit_inblay
+msgid "<strong>Supplier's Number: </strong>"
+msgstr ""
+
+#. module: inblay
 #: model:ir.model.fields,field_description:inblay.field_hr_employee__anniversary
 msgid "Anniversary"
 msgstr ""
@@ -162,8 +172,23 @@ msgid "Significant Other"
 msgstr ""
 
 #. module: inblay
+#: model:ir.model.fields,field_description:inblay.field_sale_order__supplier_number
+msgid "Supplier's Number"
+msgstr ""
+
+#. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
+msgid "Total with taxes ("
+msgstr ""
+
+#. module: inblay
 #: model:ir.model.fields,help:inblay.field_res_company__back_background
 msgid "URL of an image that will be the background of the main screen of the backend. Allowed formats: jpg, jpge, png, gif, svg"
+msgstr ""
+
+#. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
+msgid "Untaxed total ("
 msgstr ""
 
 #. module: inblay

@@ -16,6 +16,16 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
+msgid "<strong>Currency:</strong>"
+msgstr "<strong>Moneda:</strong>"
+
+#. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.address_layout_inherit_inblay
+msgid "<strong>Supplier's Number: </strong>"
+msgstr "<strong>Número de Proveedor: </strong>"
+
+#. module: inblay
 #: model:ir.model.fields,field_description:inblay.field_hr_employee__anniversary
 msgid "Anniversary"
 msgstr "Aniversario"
@@ -150,6 +160,21 @@ msgstr "Talla de camisa"
 #: model:ir.model.fields,field_description:inblay.field_hr_employee__significant_other
 msgid "Significant Other"
 msgstr "Pareja"
+
+#. module: inblay
+#: model:ir.model.fields,field_description:inblay.field_sale_order__supplier_number
+msgid "Supplier's Number"
+msgstr "Número de Proveedor"
+
+#. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
+msgid "Total with Taxes ("
+msgstr "Total con Impuestos ("
+
+#. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
+msgid "Untaxed total ("
+msgstr "Total sin Impuestos ("
 
 #. module: inblay
 #: model:ir.model.fields,field_description:inblay.field_hr_employee__weight

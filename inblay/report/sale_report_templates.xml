@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document_inherit_inblay" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[last()-1]" position="replace">
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//td[last()-1]" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='informations']/div[last()]" position="after">
+            <div t-if="doc.pricelist_id" class="col-auto mw-100 mb-2">
+                <strong>Currency:</strong>
+                <p class="m-0" t-field="doc.pricelist_id.currency_id.name"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='total']//table/tr[1]/td[1]" position="replace">
+            <td><strong>Untaxed total (<span t-field="doc.pricelist_id.currency_id.name"/>)</strong></td>
+        </xpath>
+        <xpath expr="//div[@id='total']//table/tr[1]" position="attributes">
+            <attribute name="class" add="o_total" remove="o_subtotal" separator=" " />
+            <attribute name="style">font-size: 18px;</attribute>
+        </xpath>
+        <xpath expr="//div[@id='total']//table/tr[last()]/td[1]" position="replace">
+            <td><strong>Total with Taxes (<span t-field="doc.pricelist_id.currency_id.name"/>)</strong></td>
+        </xpath>
+        <xpath expr="//div[@id='total']/div" position="attributes">
+            <attribute name="t-attf-class">#{'col-5' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto</attribute>
+        </xpath>
+        <xpath expr="//div[@id='total']//table/tr[last()]" position="attributes">
+            <attribute name="style">font-size: 13px;</attribute>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[1]" position="attributes">
+            <attribute name="style">width: 63%;</attribute>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//td[1]" position="attributes">
+            <attribute name="style">width: 63%;</attribute>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[2]" position="attributes">
+            <attribute name="style">width: 10%;</attribute>
+            <attribute name="class" add="text-center" separator=" "/>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//td[2]" position="attributes">
+            <attribute name="style">width: 10%;</attribute>
+            <attribute name="class" remove="text-right" separator=" "/>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[3]" position="attributes">
+            <attribute name="style">width: 9%;</attribute>
+            <attribute name="class" add="text-center" separator=" "/>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//td[3]" position="attributes">
+            <attribute name="style">width: 9%;</attribute>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[4]" position="attributes">
+            <attribute name="style">width: 9%;</attribute>
+            <attribute name="class" add="text-center" separator=" "/>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//td[4]" position="attributes">
+            <attribute name="style">width: 9%;</attribute>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//span[@t-field='line.product_uom_qty']" position="after">
+            <br/>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//span[@t-field='line.price_unit']" position="after">
+            <t t-if="line.discount>0">
+                <br/>
+                <span t-field="line.price_reduce"/>
+            </t>
+        </xpath>
+        <xpath expr="//table[hasclass('o_main_table')]/tbody//tr//span[@t-field='line.price_unit']" position="attributes">
+            <attribute name="t-att-style">'text-decoration: line-through; color: red;' if line.discount > 0 else ''</attribute>
+        </xpath>
+        <xpath expr="//t[@t-set='address']" position="after">
+            <t t-if="doc.supplier_number" t-set="supplier_number">
+                <div class="col-2">
+                    <strong>Supplier's Number: </strong><span t-field="doc.supplier_number"/>
+                </div>
+            </t>
+        </xpath>
+    </template>
+    <template id="address_layout_inherit_inblay" inherit_id="web.address_layout">
+        <xpath expr="//div[hasclass('address')]/t" position="before">
+            <t t-if="supplier_number" t-raw="supplier_number"/>
+        </xpath>
+    </template>
+</odoo>
