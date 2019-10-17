@@ -1,0 +1,592 @@
+
+<section class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <p class="mt32" style="font-size:18px">
+                Smart alerts are used to advise and warn users who work with documents of certain types and kinds. The tool let you prepare an alarm for almost any use case and catch attention at the most suitable moment: when users work with a document form view. Despite of real simplicity to configure alerts, the app will become a powerful tool to caution and to communicate any message.
+            </p>
+
+            <p class="mt8" style="font-size:18px">
+                The tool is compatible
+
+                <span>with both Odoo Enterprise and Odoo Community.</span>
+            </p>
+
+            <ul class="nav nav-tabs">
+
+            <li class="active" style="color:#428bca;">
+                <a href="#features"
+                   data-toggle="tab"
+                   aria-expanded="true"
+                >
+                   Features
+                </a>
+            </li>
+
+
+                <li>
+                    <a href="#screenshots"
+                       data-toggle="tab"
+                       aria-expanded="true"
+                    >
+                       Screenshots
+                    </a>
+                </li>
+
+                <li style="color:#428bca;">
+                    <a href="#config"
+                       data-toggle="tab"
+                       aria-expanded="true"
+                    >
+                       Configuration
+                    </a>
+                </li>
+
+            <li style="color:#428bca;">
+                <a href="#support_info"
+                   data-toggle="tab"
+                   aria-expanded="true"
+                >
+                   Support
+
+                   <span>&amp; Demo</span>
+
+                </a>
+            </li>
+
+            </ul>
+
+
+            <div class="tab-content mt16">
+
+                <div class="tab-pane active" id="features">
+
+                    <p class="mt32">
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                Prepare alerts for any Odoo document type: sale orders, opportunities, contacts, pickings, so, <strong>any existing</strong> in your database. There might be an unlimited number of warnings for a record
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                Choose which documents of this type should have alerts using the dynamic domain constructor. You can apply restrictions by any storable field. For example, make announcements only for quotations (not sale orders), warn of invoices with total between 500 and 1000, pay attention only for suppliers (not customers), and so on.
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                Alerts are located above a form view to always meet the eye of any user who opens this document. Such warnings are updated each time a form is reloaded: when you open a record, when you save a document (including any button clicked), when you switch to a next record, etc. 
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                There are 4 types of alert styles: danger (red), warning (yellow), info (blue), and success (green)
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                Display alerts, if you want, only for pre-defined user groups. For instance, show a warning not for all sales people, but only for sales managers. Take into account, however, that any sales manager always has rights of sales user
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                Alerts might be translated and, then, would be shown on a current user language
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                The tool is compatible with multi companies: each branch has an own list of alerts
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                The right to configure alerts belongs to the special user group – 'Other / Smart Alerts Admin'. You can assign any user to do that job, but make sure he/she has read rights for a target Odoo model
+                            </span>
+                        </div>
+
+                        <div class="mb8">
+                            <span class="fa fa-check-square-o fa-2x" style="color:#21B799;"/>
+                            <span style="font-size:18px">
+                                Beside text warnings, you may use simple HTML tags like links, underlining, etc. Look at the tab 'Configuration'
+                            </span>
+                        </div>
+
+                    </p>
+
+                    <div class="alert alert-warning">
+                        <span style="font-size:18px">
+                            <i class="fa fa-book"/>
+                            The module features depend on your Odoo version.
+                            Please select required one on the top right of this page
+                        </span>
+                    </div>
+
+                        <div class="col-md-12 mb32">
+                            <img class="img img-responsive shadow"
+                                 alt="Invoices warnings"
+                                 src="invoice_alert.png"
+                            />
+                        </div>
+
+                        <div class="col-md-12 mb32">
+                            <img class="img img-responsive shadow"
+                                 alt="Invoices alerts"
+                                 src="invoice_alert_rule.png"
+                            />
+                        </div>
+
+                    <div class="mb8">
+                        <h3><a name='use_cases'> Typical use cases</a></h3>
+                        <span style="font-size:18px">
+                            Smart alerts might be of use in any sphere. You decide criteria when a warning should be shown. Simply choose a document type, filter them by any storable data, and prepare a catchy warning text. Here are just a few examples: 
+<ul>
+<li><i>Sales orders:</i> to warn of the certain peculiarities of a sold product. E.g. that a product is not any more manufactured and can be sold only from existing stocks</li>
+<li><i>Purchases:</i> to make announcement for accountants that invoices with total more than 5000 should be approved by a financial manager</li>
+<li><i>Opportunities:</i> to attract attention to company policies in relation to a chosen customer, for example</li>
+<li><i>Contacts:</i> to caution a user of entering or checking certain information</li>
+<li><i>Manufacturing:</i> to remind users of relying upon new production technology while manufacturing a definite product</li>
+</ul>
+                        </span>
+                    </div>
+
+                        <div class="row col-md-12">
+                            <a name="recommended_odoo_apps"><h3>You may like the tools</h3></a>
+                        </div>
+
+
+                        <div class="row mb8">
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/knowsystem">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_1.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/knowsystem">
+                                        <span style="font-size:16px">KnowSystem</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to build deep and structured knowledge base for internal and external use</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 228
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/joint_calendar">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_2.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/joint_calendar">
+                                        <span style="font-size:16px">Joint Calendar</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to combine different Odoo events in a few configurable calendars</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 74
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/odoo_password_manager">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_3.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/odoo_password_manager">
+                                        <span style="font-size:16px">Password Manager</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to safely keep passwords for shared use</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 144
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/sticky_notes">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_4.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/sticky_notes">
+                                        <span style="font-size:16px">Sticky Notes</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to pin sticky indicative notes to any Odoo form view</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 36
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/helpdesk_custom_fields">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_5.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/helpdesk_custom_fields">
+                                        <span style="font-size:16px">Custom Fields for Helpdesk Tickets</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to add new fields for Odoo Helpdesk tickets without any technical knowledge</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 48
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/google_drive_odoo">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_6.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/google_drive_odoo">
+                                        <span style="font-size:16px">Google Drive Odoo Integration</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to automatically synchronize Odoo attachments with Google Drive files in both ways</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 394
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/owncloud_odoo">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_7.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/owncloud_odoo">
+                                        <span style="font-size:16px">OwnCloud / NextCloud Odoo Integration</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to automatically synchronize Odoo attachments with OwnCloud / NextCloud files in both ways</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 394
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 row mt8 mb8" style="min-height: 150px;">
+                                <div class="col-md-3 mt8">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/onedrive">
+                                        <img class="img img-responsive icon_module"
+                                             src="app_icon_8.png"
+                                             alt="Odoo Recommended App"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="https://apps.odoo.com/apps/modules/12.0/onedrive">
+                                        <span style="font-size:16px">OneDrive / SharePoint Odoo Integration</span>
+                                    </a>
+                                    <p class="mt0 mb0">
+                                        <span style="font-size:14px">The tool to automatically synchronize Odoo attachments with OneDrive files in both ways</span>
+                                    </p>
+                                    <strong class="pull-right">
+                                        <span style="font-size:14px;margin-left:5px;">
+                                            € 394
+                                        </span>
+
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    <div class="col-md-12 mb8 text-center">
+                        <span style="font-size:22px;">
+                            <a href="https://apps.odoo.com/apps/modules/browse?author=Odoo%20Tools">
+                                <i class="fa fa-arrow-right"> More Apps by Odoo Tools</i>
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane" id="screenshots">
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            List of smart alerts: the number is not limited!
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="List of configurable warnings"
+                             src="alerts_list.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Smart alerts: example of invoices
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="Invoices warnings"
+                             src="invoice_alert.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Smart alerts rule: example of invoices
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="Invoices alerts"
+                             src="invoice_alert_rule.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Assign a responsible user for smart alerts
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="Alarms security group"
+                             src="user_right.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Smart alert rule: example of sale orders
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="Sale orders warnings"
+                             src="sale_order_alert_rule.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Smart alerts: example of sale orders
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="Sale orders alarms"
+                             src="sale_order_alert.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Smart alert rule: example of opportunities
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="CRM warnings"
+                             src="opportunity_alert_rule.png"
+                        />
+                    </div>
+
+                    <div class="col-md-12 mb32 alert alert-success">
+                         <span style="font-size:18px">
+                            Smart alerts: example of opportunities
+                         </span>
+                    </div>
+                    <div class="col-md-12 mb32">
+                        <img class="img img-responsive shadow"
+                             alt="CRM alarms"
+                             src="opportunity_alert.png"
+                        />
+                    </div>
+
+                </div>
+
+                <div class="tab-pane" id="config">
+
+                        <div class="mb8">
+
+                            <h3>HTML tags</h3>
+                            <span style="font-size:18px">
+                                Inside the fields 'Warning text' and 'Alert title' you can use raw HTML tags. Thus, you can make a text bold or add a clickable link. Avoid using complex HTML structures as div containers not to spoil form view layout. Simple tags as fa icons, 'a', 'strong' are absolutely safe to use
+                            </span>
+
+                        </div>
+
+                            <div class="col-md-12 mb32 alert alert-success">
+                                 <span style="font-size:18px">
+                                    Smart alerts: html tags example
+                                 </span>
+                            </div>
+                            <div class="col-md-12 mb32">
+                                <img class="img img-responsive shadow"
+                                     alt="HTML for warnings and alarms"
+                                     src="html_tags_conf.png"
+                                />
+                            </div>
+
+                        <div class="mb8">
+
+                            <h3>Installation Tips</h3>
+                            <span style="font-size:18px">
+                                In order the widget works correctly, re-start Odoo server. If you faced the error 'Qweb2: Template is not found': restart Odoo server > refresh the page (Ctrl+Shift+R)
+                            </span>
+
+                        </div>
+
+                </div>
+
+                <div class="tab-pane" id="support_info">
+
+                    <div class="col-md-12">
+                        <p style="font-size:18px;">
+                            <a href="https://odootools.com/">OdooTools</a> is the team of developers and business analysts to help you extend Odoo potential. We have been communicating with end users to whom the software became the main business tool since 2012. As a result, we are proud of dozens of successful Odoo apps developed.  We are open for new ideas and challenges to create the best Odoo tools for business needs all over the world.
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-12 mb4 alert alert-success">
+                         <span style="font-size:18px">
+                            To contact us please register in our support system. Registration form is available by any link below. Registration doesn't take more than 30 seconds. No phone number or credit card are required
+                         </span>
+                    </div>
+
+                    <div class="col-md-12"
+                         style="background-color:#339966; padding:2%;"
+                    >
+                        <div style="font-size:25px;" class="text-center">
+                            <a href="https://odootools.com/my/tickets/newticket?&amp;x_custom_1=x_option_93&amp;x_custom_2=x_option_2&amp;url_type_id=1"
+                               target="_blank"
+                               style="color:white;padding:0 1% 0 1%"
+                            >
+                                <i class="fa fa-bug" style="color:white;"/> Bug Report
+                            </a>
+                            <a href="https://odootools.com/my/tickets/newticket?&amp;x_custom_1=x_option_93&amp;x_custom_2=x_option_2&amp;url_type_id=4"
+                               target="_blank"
+                               style="color:white;padding:0 1% 0 1%"
+                            >
+                                <i class="fa fa-info-circle" style="color:white;"/> Raise Question
+                            </a>
+                            <a href="https://odootools.com/my/tickets/newticket?&amp;x_custom_1=x_option_93&amp;x_custom_2=x_option_2&amp;url_type_id=2"
+                               target="_blank"
+                               style="color:white;padding:0 1% 0 1%"
+                            >
+                                <i class="fa fa-bookmark" style="color:white;"/> New Features
+                            </a>
+                        </div>
+                        <div style="font-size:25px"  class="text-center">
+
+                            <a href="https://odootools.com/my/tickets/newticket?&amp;x_custom_1=x_option_93&amp;x_custom_2=x_option_2&amp;url_type_id=3&amp;name=Demo Database for Testing"
+                               target="_blank"
+                               style="color:white;padding:0 1% 0 1%"
+                            >
+                                <i class="fa fa-laptop" style="color:white;"/>  Request Demo Database (Live Preview)
+                            </a>
+
+                            <a href="https://odootools.com/my/tickets/newticket?&amp;x_custom_1=x_option_93&amp;x_custom_2=x_option_2&amp;url_type_id=5"
+                               target="_blank"
+                               style="color:white;padding:0 1% 0 1%"
+                            >
+                                <i class="fa fa-lightbulb-o" style="color:white;"/>  Share Module Ideas
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+                
