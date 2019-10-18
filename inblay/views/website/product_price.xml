@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_price_inblay" inherit_id="website_sale.product_price">
+        <xpath expr="//div//h4//span[@itemprop='priceCurrency']" position="attributes">
+            <attribute name="style"></attribute>
+        </xpath>
+    </template>
+
+    <template id="product_inblay" inherit_id="website_sale.product">
+        <xpath expr="//t[@t-call='website_sale.product_price']" position="before">
+            <h4 t-if="product.product_brand_id">Brand: <span t-esc="product.product_brand_id.name"/>
+            </h4>
+            <h4 t-if="product.default_code">Model: <span t-esc="product.default_code" />
+            </h4>
+        </xpath>
+    </template>
+</odoo>

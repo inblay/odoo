@@ -50,6 +50,7 @@
         "views/res_company_view.xml",
         "views/sale_order_view.xml",
         "report/sale_report_templates.xml",
+        "views/website/product_price.xml",
     ],
     'demo': [
     ],
