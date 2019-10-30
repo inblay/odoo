@@ -62,7 +62,7 @@ class security_role(models.Model):
         Inverse method for group_ids
         """
         for role in self:
-            role.user_ids.write({"groups_id": [(6, 0, role.group_ids.ids)]})
+            role.user_ids._inverse_security_role_ids()
 
     name = fields.Char(
         string="Name",
