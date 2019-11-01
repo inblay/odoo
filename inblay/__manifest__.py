@@ -36,7 +36,8 @@
         'timesheet_grid',
         'website_sale',
         'website',
-        # 'smart_warnings', uncomment when this branch is merged
+        'account_asset',
+        'smart_warnings',
     ],
     'test': [
     ],
