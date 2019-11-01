@@ -9,23 +9,10 @@ from odoo import fields, models, api
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
-    default_code = fields.Char(
-        'Internal Reference', compute='_compute_default_code',
-        inverse='_set_default_code', required=False, store=True)
-
     sale_price_usd = fields.Float(
         'Sale Price in USD',
         digits=dp.get_precision('Product Price'),
         help="Sale price of the product in USD currency")
-
-    @api.multi
-    @api.returns('self', lambda value: value.id)
-    def copy(self, default=None):
-        if default is None:
-            default = {}
-        default['default_code'] = default.get('default_code', '.')
-
-        return super(ProductTemplate, self).copy(default=default)
 
     @api.onchange('sale_price_usd')
     def _onchange_sale_price(self):
