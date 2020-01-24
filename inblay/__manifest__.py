@@ -7,7 +7,7 @@
     'website': 'https://www.vauxoo.com',
     'license': 'AGPL-3',
     'category': 'Installer',
-    'version': '12.0.0.0.6',
+    'version': '12.0.1.0.0',
     'depends': [
         'account',
         'account_accountant',
@@ -22,6 +22,7 @@
         'hr_recruitment',
         'l10n_mx_reports',
         'l10n_mx_edi',
+        'l10n_mx_edi_vendor_bills',
         'product_management',
         'product_management_accounting',
         'product_management_purchase',
