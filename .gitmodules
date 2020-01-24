@@ -11,3 +11,7 @@
 [submodule "web"]
 	path = web
 	url = https://github.com/OCA/web
+[submodule "vendor-bills"]
+	path = vendor-bills
+	url = git@git.vauxoo.com:vauxoo/vendor-bills.git
+	branch = 12.0
