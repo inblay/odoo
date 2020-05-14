@@ -16,6 +16,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: inblay
+#: model_terms:ir.ui.view,arch_db:inblay.report_purchaseorder_document_inherit
 #: model_terms:ir.ui.view,arch_db:inblay.report_saleorder_document_inherit_inblay
 msgid "<strong>Currency:</strong>"
 msgstr "<strong>Moneda:</strong>"
